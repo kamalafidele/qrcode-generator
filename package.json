@@ -1,0 +1,17 @@
+{
+  "name": "qr-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KAMARA Fidele",
+  "license": "MIT",
+  "dependencies": {
+    "prompt-async": "^0.9.9",
+    "prompt-sync": "^4.2.0",
+    "qrcode": "^1.5.1"
+  }
+}
