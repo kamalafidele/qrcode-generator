@@ -44,13 +44,6 @@ const generateQRCode = async () => {
                 console.log('Please select a correct option');
         }
     } while (choice !== 0);
-    // try {
-    //     await QRCode.toFile('./code.png', text);
-    //     const code = await QRCode.toString(text, { type: 'terminal' });
-    //     console.log(code);
-    // } catch (e) {
-    //     console.log(e);
-    // }
 }
 
 generateQRCode();
