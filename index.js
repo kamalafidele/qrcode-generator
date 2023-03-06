@@ -1,11 +1,13 @@
 const QRCode = require('qrcode');
 const prompt = require('prompt-sync')();
 
+const SUCCESS_MSG = 'QR CODE generated successfully';
+
 const generateToImage = async () => {
     try {
         const text = prompt('Enter the text: ');
         await QRCode.toFile('./qr-code.png', text);
-        console.log('QR CODE generated successfully');
+        console.log(SUCCESS_MSG);
     } catch (e) {}
 }
 
@@ -14,7 +16,7 @@ const generateToTerminal = async () => {
         const text = prompt('Enter the text: ');
         const code = await QRCode.toString(text, { type: 'terminal' });
         console.log(code);
-        console.log('QR CODE generated successfully');
+        console.log(SUCCESS_MSG);
     } catch (e) {}
 }
 
